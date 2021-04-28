@@ -1,5 +1,5 @@
 ## 预览链接
-rokixy.github.io/cv-demo/
+https://rokixy.github.io/cv-demo/dist/index.html
 
 ## 部署
 使用如下命令：
