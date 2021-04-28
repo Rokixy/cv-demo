@@ -50,6 +50,19 @@ let s = `
     transform: translateX(-50%);
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 100%);
 }
+/* 然后让它转起来
+ **/
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#div1{
+    animation: spin 5s linear infinite;
+}
 `
 s2 = ""
 let n = 0
@@ -70,6 +83,6 @@ let step = () => {
         if (n < s.length) {
             step()
         }
-    }, 0)
+    }, 20)
 }
 step()
